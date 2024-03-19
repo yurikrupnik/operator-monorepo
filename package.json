@@ -1,0 +1,14 @@
+{
+  "name": "@operator-monorepo/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {
+    "@monodon/rust": "1.4.0"
+  },
+  "devDependencies": {
+    "@nx/workspace": "18.1.2",
+    "nx": "18.1.2"
+  }
+}

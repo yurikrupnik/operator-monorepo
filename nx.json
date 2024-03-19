@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
+    "production": [
+      "default"
+    ],
+    "sharedGlobals": []
+  },
+  "plugins": [
+    "@monodon/rust"
+  ],
+  "nxCloudAccessToken": "Yjc1MjM1NDEtMjQ4OC00N2U2LWE3NWMtMDIyN2JmYWE0N2JhfHJlYWQtd3JpdGU="
+}
