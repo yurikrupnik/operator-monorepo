@@ -1,9 +1,18 @@
 { pkgs ? import <nixpkgs> { }, pythonPackages ? pkgs.python3Packages }:
 
+#pkgs.mgsShell {
+#  buildInputs = [
+#    pkgs.kind
+#  ];
+#}
+
 pkgs.mkShell {
   buildInputs = [
-     pythonPackages.numpy
-     pythonPackages.scipy
-     pythonPackages.jupyterlab
+#    pkgs.just
+#    pkgs.kind
+#    pythonPackages.pandas
+#    pythonPackages.numpy
+#    pythonPackages.scipy
+    pythonPackages.jupyterlab
   ];
 }

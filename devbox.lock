@@ -1,6 +1,10 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "go-task": {
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#go-task",
+      "source": "nixpkg"
+    },
     "hello@latest": {
       "last_modified": "2024-03-08T13:51:52Z",
       "resolved": "github:NixOS/nixpkgs/a343533bccc62400e8a9560423486a3b6c11a23b#hello",
@@ -100,6 +104,10 @@
           "store_path": "/nix/store/d0wmw2i217vak50q2h94wic5ipi11jir-kind-0.22.0"
         }
       }
+    },
+    "tilt": {
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#tilt",
+      "source": "nixpkg"
     }
   }
 }
