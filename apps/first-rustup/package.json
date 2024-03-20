@@ -1,0 +1,20 @@
+{
+  "name": "first-rustup",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview",
+    "serve": "rsbuild serve"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.5"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.5.1",
+    "@rsbuild/plugin-babel": "^0.5.1",
+    "@rsbuild/plugin-solid": "^0.5.1",
+    "typescript": "^5.4.2"
+  }
+}

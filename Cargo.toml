@@ -1,6 +1,11 @@
+
 [workspace]
-resolver = "2"
-members = []
+resolver = '2'
+members = [
+	'libs/globals',
+	'apps/cli/app1',
+	'apps/cli/app2',
+]
 
 [profile.release]
 lto = true

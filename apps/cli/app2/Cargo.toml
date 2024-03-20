@@ -1,0 +1,18 @@
+[package]
+name = "cli_app2"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.scripts]
+build = "cargo build --release"
+lint = "cargo clippy"
+test = "cargo test"
+format = "cargo fmt"
+container = "docker buildx build --platform linux/amd64 -t cli_app2 ."
+hello = "echo Hello"
+goodbye = "echo Goodbye"
+
+[dependencies]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

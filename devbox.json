@@ -1,0 +1,24 @@
+{
+  "$schema":  "https://raw.githubusercontent.com/jetpack-io/devbox/0.10.1/.schema/devbox.schema.json",
+  "packages": ["kind@latest", "hello@latest", "just"],
+//  "include": ["./commands/devbox.json"],
+  "shell": {
+    "init_hook": [
+      "just nx",
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "echo": "hello sht!",
+      "kind": "kind",
+      "just": "just",
+      "cluster-create": "just create",
+      "cluster-update": "kind create cluster -n devbox",
+      "cluster-delete": "kind delete cluster -n devbox",
+      "just-create": "just create",
+      "just-update": "just update",
+      "test":  "echo 'Starting devbox!' > /dev/null",
+      "start": "echo 'Starting devbox!' > /dev/null",
+      "stop":  "echo 'Stopping devbox!' > /dev/null"
+    }
+  }
+}
