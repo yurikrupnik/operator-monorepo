@@ -10,7 +10,7 @@
     ],
     "scripts": {
       "echo": "hello sht!",
-      "kind": "kind",
+//      "kind": "kind",
       "just": "just",
       "cluster-create": "just create",
       "cluster-update": "kind create cluster -n devbox",

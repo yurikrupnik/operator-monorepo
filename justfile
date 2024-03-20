@@ -10,6 +10,10 @@ get:
     nix profile list
 test:
     nix config check
+    bat ~/.config/gcloud/application_default_credentials.jsona
+    bat ~/.config/gcloud/configurations/config_default
+    bat ~/.config/gcloud/legacy_credentials/yuri@airwayz.co/adc.json
+    cat ~/.config/gcloud/active_config
 create:
     nix flake init -t devbox#nixos
     nix profile install nixpkgs#kind
@@ -41,6 +45,7 @@ update:
     nix flake info
     nix flake metadata
     nix flake prefetch
+    devbox generate readme
 #    nixos-rebuild switch --flake .#devbox
 
 faiks:
