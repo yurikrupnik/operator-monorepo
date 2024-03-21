@@ -1,4 +1,7 @@
-fn main() {
-    println!("Hello, world!");
-}
+mod commands;
 
+use commands::parse_subcommand;
+
+fn main() {
+    parse_subcommand();
+}

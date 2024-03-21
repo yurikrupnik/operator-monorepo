@@ -8,6 +8,7 @@
     "@monodon/rust": "1.4.0"
   },
   "devDependencies": {
+    "@nx-go/nx-go": "beta",
     "@nx/workspace": "18.1.2",
     "nx": "18.1.2"
   }
