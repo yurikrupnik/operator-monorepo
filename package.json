@@ -9,6 +9,8 @@
   },
   "devDependencies": {
     "@nx-go/nx-go": "beta",
+    "@nx-tools/container-metadata": "^5.2.0",
+    "@nx-tools/nx-container": "^5.2.0",
     "@nx/workspace": "18.1.2",
     "nx": "18.1.2"
   }

@@ -2,9 +2,14 @@
   "$schema":  "https://raw.githubusercontent.com/jetpack-io/devbox/0.10.1/.schema/devbox.schema.json",
 //  "extends": "../common/devbox.base.json",
   "packages": [
-    "just","hello", "bun", "ctlptl", "kind",
-    "kubectl", "helm", "skaffold", "docker", "docker-compose"
-  , "minikube", "kubectx", "kubens", "k9s", "kubetail", "kubefwd", "kubeseal"
+    "just","hello", "bun",
+// kubernetes
+    "ctlptl", "kind",
+//    "kubectl", "helm", "skaffold", "docker", "docker-compose"
+    "minikube",
+//    "kubectx",
+//    "kubens", "k9s", "kubetail", "kubefwd",
+    "kubeseal"
   ],
   "env": {
     "API_URL": "https://api.example.com"
@@ -14,7 +19,8 @@
       "echo 'Welcome to devbox!' > /dev/null"
     ],
     "scripts": {
-      "echo": "hello",
+      "just-update": "just update",
+      "manual-create-dev-env": "bash create-dev-env.sh",
       "shit": "echo sht!"
     }
   }

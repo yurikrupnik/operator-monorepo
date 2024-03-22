@@ -19,7 +19,8 @@ devbox run <script>
 ## Scripts
 Scripts are custom commands that can be run using this project's environment. This project has the following scripts:
 
-* [echo](#devbox-run-echo)
+* [just-update](#devbox-run-just-update)
+* [manual-create-dev-env](#devbox-run-manual-create-dev-env)
 * [shit](#devbox-run-shit)
 
 ## Environment
@@ -39,12 +40,23 @@ echo 'Welcome to devbox!' > /dev/null
 
 * [just](https://www.nixhub.io/packages/just)
 * [hello](https://www.nixhub.io/packages/hello)
+* [bun](https://www.nixhub.io/packages/bun)
+* [ctlptl](https://www.nixhub.io/packages/ctlptl)
+* [kind](https://www.nixhub.io/packages/kind)
+* [minikube](https://www.nixhub.io/packages/minikube)
+* [kubeseal](https://www.nixhub.io/packages/kubeseal)
 
 ## Script Details
 
-### devbox run echo
+### devbox run just-update
 ```sh
-hello
+just update
+```
+&ensp;
+
+### devbox run manual-create-dev-env
+```sh
+bash create-dev-env.sh
 ```
 &ensp;
 
