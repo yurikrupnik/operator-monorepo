@@ -88,7 +88,8 @@ jobs:
 #          cache: 'pnpm'
       - run: bun install
       - uses: nrwl/nx-set-shas@v4
-      - run: bun exec nx affected -t build
+      - run: bun nx run-many --parallel -t build
+#      - run: bun exec nx affected -t build
   test:
     runs-on: ubuntu-latest
     steps:
