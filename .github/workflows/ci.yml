@@ -87,7 +87,6 @@ jobs:
       - run: pnpm install
       - uses: nrwl/nx-set-shas@v4
       - run: pnpm nx run-many --parallel -t build
-#      - run: bun exec nx affected -t build
   test:
     runs-on: ubuntu-latest
     steps:
