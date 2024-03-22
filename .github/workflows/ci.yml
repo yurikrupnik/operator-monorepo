@@ -78,17 +78,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: oven-sh/setup-bun@v1
-#      - uses: pnpm/action-setup@v2
-#        with:
-#          version: 8
-#      - uses: actions/setup-node@v3
-#        with:
-#          node-version: 20
-#          cache: 'pnpm'
-      - run: bun install
+#      - uses: oven-sh/setup-bun@v1
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      - run: pnpm install
       - uses: nrwl/nx-set-shas@v4
-      - run: bun nx run-many --parallel -t build
+      - run: pnpm nx run-many --parallel -t build
 #      - run: bun exec nx affected -t build
   test:
     runs-on: ubuntu-latest
