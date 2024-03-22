@@ -47,7 +47,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-      - run: pnpm exec nx affected -t container
+      - run: pnpm exec nx affected -t container --prod
         env:
           GOOS: linux
           GOARCH: amd64
