@@ -5,6 +5,7 @@ default:
 dk:
     kind -h
 get:
+    devbox global list
     nix config show
     nix flake show
     nix profile list
@@ -40,12 +41,14 @@ make:
     make -j 4
 
 update:
+    #devbox global list
     devbox update
     nix flake update
     nix flake info
     nix flake metadata
     nix flake prefetch
     devbox generate readme
+#    sudo nixos-rebuild switch --flake .#devbox
 #    nixos-rebuild switch --flake .#devbox
 
 faiks:

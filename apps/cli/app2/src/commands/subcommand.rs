@@ -5,7 +5,7 @@ use std::fmt::Debug;
 use crate::commands::{ClusterAction, ClusterSubcommand};
 use crate::commands::{SystemAction, SystemSubcommand};
 use crate::commands::{UserAction, UsersSubcommand};
-use clap::{FromArgMatches, Parser};
+use clap::{FromArgMatches, Parser, Subcommand as ClapSubcommand};
 
 /// Simple program to manage personal cli application
 #[derive(Parser, Debug)]

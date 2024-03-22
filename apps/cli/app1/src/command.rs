@@ -4,7 +4,7 @@ use miette::{bail, Result};
 use serde::Deserialize;
 use std::collections::HashMap;
 use std::env;
-use std::io::Read;
+// use std::io::Read;
 use std::os::unix::process::CommandExt;
 
 const NIX_FLAGS: [&str; 12] = [
