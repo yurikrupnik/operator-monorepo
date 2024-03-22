@@ -1,7 +1,8 @@
-mod commands;
-
-use commands::parse_subcommand;
+// mod commands;
+//
+// use commands::parse_subcommand;
 
 fn main() {
-    parse_subcommand();
+    println!("Hello, world!");
+    // parse_subcommand();
 }

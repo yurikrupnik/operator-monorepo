@@ -3,6 +3,7 @@
 resolver = '2'
 members = [
 	'libs/globals',
+	'apps/cli/app1',
 	'apps/cli/app2',
 	'apps/cli/app3',
 ]

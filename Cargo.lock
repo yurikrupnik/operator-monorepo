@@ -240,6 +240,33 @@ dependencies = [
 ]
 
 [[package]]
+name = "cli_app1"
+version = "0.1.0"
+dependencies = [
+ "ansiterm",
+ "clap",
+ "cli-table",
+ "dotlock",
+ "fs2",
+ "include_dir",
+ "indoc",
+ "miette",
+ "nix",
+ "regex",
+ "reqwest 0.12.0",
+ "schematic",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+ "tempdir",
+ "thiserror",
+ "tracing",
+ "which",
+ "whoami",
+ "xdg",
+]
+
+[[package]]
 name = "cli_app2"
 version = "0.1.0"
 dependencies = [
