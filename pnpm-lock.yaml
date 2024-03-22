@@ -10,6 +10,9 @@ dependencies:
     version: 1.4.0
 
 devDependencies:
+  '@nx-go/nx-go':
+    specifier: beta
+    version: 3.0.0-beta.1(nx@18.1.2)
   '@nx/workspace':
     specifier: 18.1.2
     version: 18.1.2
@@ -93,6 +96,15 @@ packages:
       - '@swc-node/register'
       - '@swc/core'
       - debug
+    dev: true
+
+  /@nx-go/nx-go@3.0.0-beta.1(nx@18.1.2):
+    resolution: {integrity: sha512-X7uChb3nTEj8mLJd8QKC3hD8VUhIVAViwAMEWv6Ams1ZMKUtxLvZPQuhyKshxxbLcuGTXu8DiWCSHhS8YmqkhA==}
+    dependencies:
+      '@nx/devkit': 18.1.2(nx@18.1.2)
+      tslib: 2.6.2
+    transitivePeerDependencies:
+      - nx
     dev: true
 
   /@nx/devkit@18.1.0-beta.2(nx@18.1.0-beta.2):
