@@ -54,6 +54,30 @@
           "release": true
         }
       }
+    },
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "options": {
+        "push": true,
+        "file": "./rust.Dockerfile",
+        "target": "rust",
+        "build-args": [
+          "APP_NAME=cli_app1"
+        ],
+        "metadata": {
+          "images": [
+            "$REGISTRY/cli-app1"
+          ],
+          "tags": [
+            "type=schedule",
+            "type=ref,event=branch",
+            "type=ref,event=tag",
+            "type=ref,event=pr",
+            "type=semver,pattern={{version}}",
+            "type=sha"
+          ]
+        }
+      }
     }
   },
   "tags": [

@@ -1,7 +1,11 @@
 {
   "$schema":  "https://raw.githubusercontent.com/jetpack-io/devbox/0.10.1/.schema/devbox.schema.json",
 //  "extends": "../common/devbox.base.json",
-  "packages": ["just","hello", "bun"],
+  "packages": [
+    "just","hello", "bun", "ctlptl", "kind",
+    "kubectl", "helm", "skaffold", "docker", "docker-compose"
+  , "minikube", "kubectx", "kubens", "k9s", "kubetail", "kubefwd", "kubeseal"
+  ],
   "env": {
     "API_URL": "https://api.example.com"
   },

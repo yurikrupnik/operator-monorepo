@@ -27,7 +27,7 @@ jobs:
       - run: pnpm install
       - uses: nrwl/nx-set-shas@v4
       - run: pnpm exec nx affected -t lint test build
-  image:
+  container:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -42,7 +42,7 @@ jobs:
           cache: 'pnpm'
       - run: pnpm install
       - uses: nrwl/nx-set-shas@v4
-      - run: pnpm exec nx affected -t image
+      - run: pnpm exec nx affected -t container
   lint:
     runs-on: ubuntu-latest
     steps:
