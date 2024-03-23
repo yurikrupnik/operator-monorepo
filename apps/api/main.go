@@ -8,5 +8,5 @@ func Hello(name string) string {
 }
 
 func main() {
-	fmt.Println(Hello("go-app1"))
+	fmt.Println(Hello("api"))
 }

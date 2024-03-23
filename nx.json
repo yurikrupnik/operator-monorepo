@@ -8,10 +8,13 @@
     "production": [
       "default"
     ],
-    "sharedGlobals": []
+    "sharedGlobals": [
+      "{workspaceRoot}/go.work"
+    ]
   },
   "plugins": [
-    "@monodon/rust"
+    "@monodon/rust",
+    "@nx-go/nx-go"
   ],
   "nxCloudAccessToken": "Yjc1MjM1NDEtMjQ4OC00N2U2LWE3NWMtMDIyN2JmYWE0N2JhfHJlYWQtd3JpdGU="
 }
