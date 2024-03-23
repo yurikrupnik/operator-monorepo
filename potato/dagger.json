@@ -1,0 +1,20 @@
+{
+  "name": "potato",
+  "sdk": "typescript",
+  "dependencies": [
+    {
+      "name": "eslint",
+      "source": "github.com/quartz-technology/daggerverse/eslint@00f5931a9537bfaca73669e71fbde640aef22a0e"
+    },
+    {
+      "name": "bun",
+      "source": "github.com/fluent-ci-templates/bun-pipeline@da92f6180fb46018c29c6406a246de7061a2478d"
+    },
+    {
+      "name": "cargo",
+      "source": "github.com/grouville/daggerverse/cargo@ad0e823d0e4885221b52c4e09c83aad743fce454"
+    }
+  ],
+  "source": "dagger",
+  "engineVersion": "v0.10.2"
+}

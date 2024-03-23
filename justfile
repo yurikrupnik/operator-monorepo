@@ -2,6 +2,12 @@ default:
     echo 'Hello, world!'
 #    just get
 #    gum choose "fix" "feat" "docs" "style" "refactor" "test" "chore" "revert"
+dagger-a:
+    dagger -m github.com/vikram-dagger/daggerverse/fileutils call tree --dir=.
+    dagger -m github.com/KGB33/daggerverse/rust call build
+dagger-post:
+    cd potato
+    dagger run -m github.com/vikram-dagger/daggerverse/fileutils call tree --dir=.
 dk:
     kind -h
 get:

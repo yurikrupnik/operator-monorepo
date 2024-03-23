@@ -6,6 +6,8 @@ members = [
 	'apps/cli/app1',
 	'apps/cli/app2',
 	'apps/cli/app3',
+	'apps/operators/app1',
+	'apps/operators/app2',
 ]
 exclude = [
 	'tauri-app/*',
